@@ -1,0 +1,182 @@
+.heading-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__logo {
+        width: 100%;
+        padding: 20px 0;
+        @include box-shadow
+    }
+    &__logo img {
+        width: 50%;
+    }
+    &__content {
+        width: 100%;
+        background-color:#c9c9c94b ;
+        &--map {
+            @include flex-properties(row);
+            padding: 30px 0;
+            background-color: #c9c9c98f;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &--map i.fas.fa-map-marker-alt {
+            font-size: 30px;
+            padding-right: 25px;
+        }
+        &--map h3 {
+            font-size: 25px;
+            font-family: $font-paragraph;
+        }
+    }
+        &__content h2{
+            @include heading-2;
+        }
+        &__content p{
+            font-size: 30px;
+            font-family: $font-paragraph;
+            font-weight: 300;
+            margin: 50px 0;
+            padding: 0 20px
+        }
+        &__content button{
+           @include button;
+        }
+        &__content button a{
+            color: #fff;
+            
+        }
+
+}
+
+.how-it-work-sections {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 5%;
+    &__content {
+        width: 100%;
+        &--cards 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+         }
+         &--cards .card-1 {
+             display: flex;
+             justify-content: flex-start;
+             align-items: center;
+             margin-top: 40px;
+             background-color: #c9c9c936;
+             width: 100%;
+             padding: 25px 0;
+             margin-left: 15px;
+             border-radius: 20px;
+             @include box-shadow;
+         }
+         &--cards .card-1 p {
+             background-color:$primary-color;
+             padding: 10px 15px;
+             margin-right: 20px;
+             border-radius: 100%;
+             font-family: $font-paragraph;
+             color: #fff;
+             font-size: 18px;
+             font-weight: 800;
+             margin-left: -15px;
+         }
+         &--cards .card-1 .fas.fa-mobile-alt {
+            @include icon-style;
+         }
+         &--cards .card-1 .fas.fa-store {
+            @include icon-style;
+         }
+         &--cards .card-1 .fas.fa-bars {
+          @include icon-style;
+         }
+         &--cards .card-1 h3 {
+             font-size: 20px;
+             font-family:$font-paragraph;
+         }
+         &--cards .active {
+             background-color: #9256dc1f;
+             margin-bottom: 60px;
+         }
+    }
+    &__content h2 {
+        @include heading-2;
+    }
+   
+}
+
+.restaurants-section {
+    background-color: #c9c9c936 ;
+    width: 100%;
+    padding: 3% 5%;
+    &__content h2{
+        @include heading-2;
+        margin-bottom: 30px;
+    }
+   
+    &__content .card-2-new img{
+       height: 25vh;
+       width: 100%;
+       object-fit: cover;
+       border-radius: 40px 40px 0 0;
+    }
+    &__content .card-2-new .cont{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 20px;
+     @include box-shadow;
+     margin-bottom: 30px;
+     margin-top: -3px;
+     border-radius: 0px 0px 40px 40px;
+    }
+    &__content .card-2-new .cont .text h3{
+    font-family: $font-paragraph;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    }
+    &__content .card-2-new .cont .text p{
+    font-family: $font-paragraph;
+    font-size: 22px;
+    }
+    &__content .card-2-new .cont .icon i.far.fa-heart{
+    font-size: 28px;
+    }
+
+    
+}
+
+.footer-section {
+    padding: 7% 5%;
+    background-color: #515155;
+    color: white;
+    font-family: $font-paragraph;
+    &__content{
+        
+    }
+    &__content img {
+        filter: invert(1);
+        margin-bottom: 20px;
+    }
+    &__content .links p{
+        padding: 10px 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+    }
+    &__content .links i.fas.fa-utensils{
+       padding-right: 20px;
+    }
+    &__content .links i.fas.fa-hands-helping{
+       padding-right: 16px;
+    }
+}

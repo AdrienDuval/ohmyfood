@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* variables*/
+/* mixins*/
+.heading-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.heading-section__logo {
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.heading-section__logo img {
+  width: 50%;
+}
+.heading-section__content {
+  width: 100%;
+  background-color: #c9c9c94b;
+}
+.heading-section__content--map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px 0;
+  background-color: #c9c9c98f;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.heading-section__content--map i.fas.fa-map-marker-alt {
+  font-size: 30px;
+  padding-right: 25px;
+}
+.heading-section__content--map h3 {
+  font-size: 25px;
+  font-family: "roboto", sans-serif;
+}
+.heading-section__content h2 {
+  font-size: 40px;
+  font-family: "roboto", sans-serif;
+  padding-top: 40px;
+  font-weight: 700;
+}
+.heading-section__content p {
+  font-size: 30px;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+.heading-section__content button {
+  background-color: #9356dc;
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 55px;
+  border: none;
+  margin-bottom: 100px;
+}
+.heading-section__content button a {
+  color: #fff;
+}
+
+.how-it-work-sections {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 5%;
+}
+.how-it-work-sections__content {
+  width: 100%;
+}
+.how-it-work-sections__content--cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.how-it-work-sections__content--cards .card-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #c9c9c936;
+  width: 100%;
+  padding: 25px 0;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.how-it-work-sections__content--cards .card-1 p {
+  background-color: #9356dc;
+  padding: 10px 15px;
+  margin-right: 20px;
+  border-radius: 100%;
+  font-family: "roboto", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: -15px;
+}
+.how-it-work-sections__content--cards .card-1 .fas.fa-mobile-alt {
+  font-size: 25px;
+  padding: 0 20px;
+  color: #8b8b8b;
+}
+.how-it-work-sections__content--cards .card-1 .fas.fa-store {
+  font-size: 25px;
+  padding: 0 20px;
+  color: #8b8b8b;
+}
+.how-it-work-sections__content--cards .card-1 .fas.fa-bars {
+  font-size: 25px;
+  padding: 0 20px;
+  color: #8b8b8b;
+}
+.how-it-work-sections__content--cards .card-1 h3 {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+}
+.how-it-work-sections__content--cards .active {
+  background-color: #9256dc1f;
+  margin-bottom: 60px;
+}
+.how-it-work-sections__content h2 {
+  font-size: 40px;
+  font-family: "roboto", sans-serif;
+  padding-top: 40px;
+  font-weight: 700;
+}
+
+.restaurants-section {
+  background-color: #c9c9c936;
+  width: 100%;
+  padding: 3% 5%;
+}
+.restaurants-section__content h2 {
+  font-size: 40px;
+  font-family: "roboto", sans-serif;
+  padding-top: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.restaurants-section__content .card-2-new img {
+  height: 25vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px 40px 0 0;
+}
+.restaurants-section__content .card-2-new .cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  margin-top: -3px;
+  border-radius: 0px 0px 40px 40px;
+}
+.restaurants-section__content .card-2-new .cont .text h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.restaurants-section__content .card-2-new .cont .text p {
+  font-family: "roboto", sans-serif;
+  font-size: 22px;
+}
+.restaurants-section__content .card-2-new .cont .icon i.far.fa-heart {
+  font-size: 28px;
+}
+
+.footer-section {
+  padding: 7% 5%;
+  background-color: #515155;
+  color: white;
+  font-family: "roboto", sans-serif;
+}
+.footer-section__content img {
+  filter: invert(1);
+  margin-bottom: 20px;
+}
+.footer-section__content .links p {
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+.footer-section__content .links i.fas.fa-utensils {
+  padding-right: 20px;
+}
+.footer-section__content .links i.fas.fa-hands-helping {
+  padding-right: 16px;
+}/*# sourceMappingURL=style.css.map */

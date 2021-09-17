@@ -1,0 +1,38 @@
+/* variables*/
+
+$primary-color:#9356dc;
+$primary-secondary:#FF79DA;
+$primary-Tertiary:#99E2D0;
+$font-tiles:'Shrikhand', cursive;
+$font-paragraph:'roboto', sans-serif;
+$head-shadows: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/* mixins*/
+@mixin box-shadow {
+    box-shadow: $head-shadows;
+}
+@mixin flex-properties($row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $row;
+}
+@mixin button {
+    background-color: $primary-color;
+    padding: 20px 30px;
+    font-size: 30px;
+    border-radius: 55px;
+    border: none;
+    margin-bottom: 100px;
+}
+@mixin heading-2 {
+    font-size: 40px;
+            font-family: $font-paragraph;
+            padding-top: 40px;
+            font-weight: 700;
+}
+@mixin icon-style {
+    font-size: 25px;
+    padding: 0 20px;
+    color: #8b8b8b;
+}
