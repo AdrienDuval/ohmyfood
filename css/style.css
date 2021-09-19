@@ -23,7 +23,7 @@ a {
 .heading-section__logo {
   width: 100%;
   padding: 20px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
 }
 .heading-section__logo img {
   width: 50%;
@@ -64,12 +64,11 @@ a {
   padding: 0 20px;
 }
 .heading-section__content button {
-  background-color: #9356dc;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9) 31.77%, rgba(147, 86, 220, 0.7) 100%);
   padding: 20px 30px;
   font-size: 30px;
   border-radius: 55px;
   border: none;
-  margin-bottom: 100px;
 }
 .heading-section__content button a {
   color: #fff;
@@ -100,7 +99,7 @@ a {
   padding: 25px 0;
   margin-left: 15px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
 }
 .how-it-work-sections__content--cards .card-1 p {
   background-color: #9356dc;
@@ -129,7 +128,7 @@ a {
   color: #8b8b8b;
 }
 .how-it-work-sections__content--cards .card-1 h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "roboto", sans-serif;
 }
 .how-it-work-sections__content--cards .active {
@@ -168,7 +167,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
   margin-bottom: 30px;
   margin-top: -3px;
   border-radius: 0px 0px 40px 40px;
@@ -208,4 +207,113 @@ a {
 }
 .footer-section__content .links i.fas.fa-hands-helping {
   padding-right: 16px;
+}
+
+.heading-menu-section__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 5% 5%;
+  width: 80%;
+}
+.heading-menu-section__logo img {
+  width: 70%;
+}
+.heading-menu-section__logo i.fas.fa-arrow-left {
+  font-size: 25px;
+}
+.heading-menu-section__banner-img {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+.restaurant-food-section {
+  background-color: #F6F6F6;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 50px 50px 0 0;
+}
+.restaurant-food-section__content--heading-primary .cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  margin-top: -70px;
+  z-index: 2;
+}
+.restaurant-food-section__content--heading-primary .cont .text h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 40px;
+  font-weight: 500;
+}
+.restaurant-food-section__content--heading-primary .cont .icon i.fas.fa-heart {
+  font-size: 32px;
+  font-weight: 100;
+}
+.restaurant-food-section__content--recipes .entrees .head {
+  margin-top: 40px;
+}
+.restaurant-food-section__content--recipes .entrees .head h3 {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  padding-top: -5px 0;
+}
+.restaurant-food-section__content--recipes .entrees .head span {
+  display: inline-block;
+  margin-top: -20px;
+  width: 10%;
+  border-bottom: 3px solid #99E2D0;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
+}
+.restaurant-food-section__content--recipes .entrees .sm-card h4 {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .sm-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .sm-card-row p {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .sm-card-row h5 {
+  font-size: 22px;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+.restaurant-food-section__content--recipes .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.restaurant-food-section__content--recipes button {
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9) 31.77%, rgba(147, 86, 220, 0.7) 100%);
+  padding: 10px 100px;
+  font-size: 23px;
+  border-radius: 55px;
+  border: none;
+  text-align: center;
+  margin: 30px 0;
+}
+.restaurant-food-section__content--recipes button a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

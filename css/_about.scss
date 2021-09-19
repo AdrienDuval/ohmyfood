@@ -1,0 +1,101 @@
+.heading-menu-section {
+    &__logo {
+        @include flex-properties-2(row, space-between);
+        padding:5% 5% ;
+        width: 80%;
+    }
+    &__logo img{
+       width: 70%;
+    }
+    &__logo i.fas.fa-arrow-left{
+       font-size: 25px;
+    }
+
+    &__banner-img {
+        width: 100%;
+        z-index: -1;
+        position: relative;
+    }
+}
+.restaurant-food-section {
+    background-color: #F6F6F6;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    border-radius: 50px 50px 0 0;
+    &__content {
+        &--heading-primary .cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            margin-top: -70px;
+            z-index: 2;
+
+        }
+        &--heading-primary .cont .text h3 {
+            font-family: $font-tiles;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        &--heading-primary .cont .icon i.fas.fa-heart {
+            font-size: 32px;
+            font-weight: 100;
+        }
+       
+    }
+    &__content {
+        &--recipes .entrees .head{
+            margin-top: 40px;
+        }
+        &--recipes .entrees .head h3 {
+            font-size: 20px;
+            font-family: $font-paragraph;
+            font-weight: 400;
+            padding-top: -5px 0;
+        }
+        &--recipes .entrees .head span{
+            display:inline-block;
+            margin-top: -20px;
+            width:10%;
+            border-bottom:3px solid #99E2D0;
+        }
+        &--recipes .entrees .sm-card {
+            margin: 20px 0;
+            padding: 15px 20px;
+            border-radius: 20px;
+            background-color: #FFFFFF;
+            @include box-shadow;
+        }
+        &--recipes .entrees .sm-card h4 {
+            font-size: 20px;
+            font-family: $font-paragraph;
+        }
+        &--recipes .entrees .sm-card .sm-card-row {
+            @include flex-properties-2(row, space-between);
+            margin-top: 10px;
+        }
+        &--recipes .entrees .sm-card .sm-card-row p {
+            font-size: 18px;
+            font-family: $font-paragraph;
+            font-weight: 500;
+            color: #5a5a5a;
+        }
+        &--recipes .entrees .sm-card .sm-card-row h5 {
+            font-size: 22px;
+            font-family: $font-paragraph;
+            font-weight: 700;
+            color: #000000;
+        }
+        &--recipes .btn{
+            @include flex-properties-2(row, center)
+        }
+        &--recipes button{
+         @include button-resto;
+        }
+        &--recipes button a{
+            color: #fff;
+        }
+    }
+}
