@@ -16,7 +16,13 @@
         z-index: -1;
         position: relative;
     }
+    &__banner-img img{
+        height: 72vw;
+        width: 100%;
+        object-fit: cover;
+    }
 }
+
 .restaurant-food-section {
     background-color: #F6F6F6;
     padding-left: 5%;
