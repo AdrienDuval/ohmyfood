@@ -9,7 +9,7 @@
         padding: 20px 0;
         @include box-shadow
     }
-    &__logo img {
+    &__logo a {
         width: 50%;
     }
     &__content {
@@ -148,8 +148,14 @@
     font-family: $font-paragraph;
     font-size: 22px;
     }
-    &__content .card-2-new .cont .icon i.far.fa-heart{
-    font-size: 28px;
+    &__content .card-2-new .cont .icon i.fas.fa-heart{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    &__content .card-2-new .cont .icon i.fas.fa-heart:hover{
+        font-weight: 900;
+        transition: 0.4s ease-in-out;
+        color:  #A75CDB;
     }
 
     

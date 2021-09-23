@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* variables*/
@@ -25,7 +26,7 @@ a {
   padding: 20px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
 }
-.heading-section__logo img {
+.heading-section__logo a {
   width: 50%;
 }
 .heading-section__content {
@@ -69,6 +70,7 @@ a {
   font-size: 30px;
   border-radius: 55px;
   border: none;
+  margin-bottom: 60px;
 }
 .heading-section__content button a {
   color: #fff;
@@ -182,8 +184,14 @@ a {
   font-family: "roboto", sans-serif;
   font-size: 22px;
 }
-.restaurants-section__content .card-2-new .cont .icon i.far.fa-heart {
-  font-size: 28px;
+.restaurants-section__content .card-2-new .cont .icon i.fas.fa-heart {
+  font-size: 30px;
+  font-weight: 100;
+}
+.restaurants-section__content .card-2-new .cont .icon i.fas.fa-heart:hover {
+  font-weight: 900;
+  transition: 0.4s ease-in-out;
+  color: #A75CDB;
 }
 
 .footer-section {
@@ -215,10 +223,13 @@ a {
   align-items: center;
   flex-direction: row;
   padding: 5% 5%;
-  width: 80%;
+  width: 77%;
 }
 .heading-menu-section__logo img {
   width: 70%;
+}
+.heading-menu-section__logo a {
+  text-align: right;
 }
 .heading-menu-section__logo i.fas.fa-arrow-left {
   font-size: 25px;
@@ -285,6 +296,35 @@ a {
 .restaurant-food-section__content--recipes .entrees .sm-card h4 {
   font-size: 20px;
   font-family: "roboto", sans-serif;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .x-card {
+  width: 100%;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .sm-hover {
+  width: 0px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.restaurant-food-section__content--recipes .entrees .sm-card .sm-hover:hover {
+  width: 20%;
+  font-size: 35px;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: -20px -20px -20px 6px;
+  border-radius: 0px 20px 20px 0;
+  background-color: #99E2D0;
+  background-position: left bottom;
+  transition: 1s ease-in-out;
 }
 .restaurant-food-section__content--recipes .entrees .sm-card .sm-card-row {
   display: flex;

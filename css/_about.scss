@@ -2,10 +2,13 @@
     &__logo {
         @include flex-properties-2(row, space-between);
         padding:5% 5% ;
-        width: 80%;
+        width: 77%;
     }
     &__logo img{
        width: 70%;
+    }
+    &__logo a{
+       text-align: right;
     }
     &__logo i.fas.fa-arrow-left{
        font-size: 25px;
@@ -65,7 +68,7 @@
             display:inline-block;
             margin-top: -20px;
             width:10%;
-            border-bottom:3px solid #99E2D0;
+            border-bottom:3px solid $primary-Tertiary;
         }
         &--recipes .entrees .sm-card {
             margin: 20px 0;
@@ -74,9 +77,34 @@
             background-color: #FFFFFF;
             @include box-shadow;
         }
+
         &--recipes .entrees .sm-card h4 {
             font-size: 20px;
             font-family: $font-paragraph;
+        }
+        &--recipes .entrees .sm-card  {
+           @include flex-properties-2(row, space-between);
+        }
+        &--recipes .entrees .sm-card .x-card {
+            width: 100%;
+        }
+        
+        &--recipes .entrees .sm-card .sm-hover {
+            width: 0px;
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .5s ease-out;
+        }
+        &--recipes .entrees .sm-card .sm-hover:hover {
+            width: 20%;
+            font-size: 35px;
+            padding: 28px;
+            @include flex-properties(column);
+            margin: -20px -20px -20px 6px;
+            border-radius: 0px 20px 20px 0;
+            background-color:$primary-Tertiary;
+            background-position: left bottom;
+            transition: 1s ease-in-out;
         }
         &--recipes .entrees .sm-card .sm-card-row {
             @include flex-properties-2(row, space-between);
